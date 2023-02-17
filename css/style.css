@@ -1,0 +1,165 @@
+#index {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  background: #fcfcfc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  margin-bottom: 40px;
+  padding: 20px;
+  width: 230px;
+  border-radius: 53px;
+  border: 1px solid #eb09ff;
+  background-color: #fcfcfc;
+}
+
+.entry {
+  flex: 1;
+  margin-top: 100px;
+  max-width: 50vh;
+  background: #ffffff;
+  padding: 0px 50px 10px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+*[placeholder] {
+  letter-spacing: 0.1rem;
+}
+
+.entry h1 {
+  letter-spacing: 0.7rem;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.entry a {
+  display: block;
+  text-decoration: none;
+  font-size: 12px;
+  text-align: right;
+  margin-top: 120px;
+}
+
+.btnLogin {
+  color: #f5f0f0;
+  border: none;
+  background: #eb09ff;
+  padding: 12px 60px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  margin: 0 auto;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  padding-top: 50px;
+}
+
+.card {
+  color: #ffffff;
+  background: #eb09ff;
+  padding: 50px 60px;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  justify-items: center;
+  border-radius: 5px;
+}
+.card:hover {
+  background: #b90ac9;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.card p {
+  font-size: 5rem;
+}
+
+.card span {
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  word-wrap: break-word;
+  max-width: 30ch;
+}
+
+.icon {
+  justify-self: end;
+  width: 40px;
+}
+
+#conta {
+  max-width: 1200px;
+}
+.gerenciar h2 {
+  font-size: 2rem;
+  padding-top: 60px;
+  letter-spacing: 0.1rem;
+  position: relative;
+  font-weight: 100;
+}
+
+.gerenciar h2::before {
+  content: "";
+  width: 142px;
+  height: 3px;
+  background: #b90ac9;
+  position: absolute;
+  top: 95px;
+  left: -45px;
+}
+
+.gerenciar ul {
+  display: flex;
+  flex-direction: row;
+  gap: 45px;
+  list-style: none;
+  padding-top: 30px;
+}
+
+.gerenciar ul li {
+  padding: 20px;
+  background: #f7f2f296;
+  font-size: 1rem;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+  letter-spacing: 0.1rem;
+  text-align: center;
+  width: 300px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/*Modal*/
+
+.modal {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal .modal-container {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 200px;
+}
